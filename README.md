@@ -173,32 +173,4 @@ docker stop localstack
 docker rm localstack
 ```
 
-## Cost Estimation (Production AWS)
-
-For **10,000 orders/month**:
-- API Gateway: ~$0.04
-- Lambda: ~$0.01
-- DynamoDB: ~$1.50
-- SQS: Free tier
-- SNS: ~$0.50
-- S3: ~$0.23
-- **Total: ~$3-4/month**
-
-## Technologies
-
-- Terraform - Infrastructure as Code
-- AWS Lambda (Python 3.11)
-- AWS API Gateway
-- Amazon DynamoDB
-- Amazon SQS
-- Amazon SNS
-- Amazon S3
-- LocalStack - Local AWS testing
-
-## License
-
-MIT License
-
----
-
 **Note**: This project uses LocalStack for local development. No actual AWS resources are created, ensuring zero AWS costs during development.
