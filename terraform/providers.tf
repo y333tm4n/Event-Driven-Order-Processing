@@ -20,29 +20,15 @@ provider "aws" {
   s3_use_path_style = true
 
   # localstack endpoints
-  # make sure this is enabled + dummy creds in your aws console just to make sure
-
   endpoints {
-    apigateway     = var.localstack_endpoint
-    cloudformation = var.localstack_endpoint
-    cloudwatch     = var.localstack_endpoint
-    dynamodb       = var.localstack_endpoint
-    ec2            = var.localstack_endpoint
-    es             = var.localstack_endpoint
-    firehose       = var.localstack_endpoint
-    iam            = var.localstack_endpoint
-    kinesis        = var.localstack_endpoint
-    lambda         = var.localstack_endpoint
-    route53        = var.localstack_endpoint
-    redshift       = var.localstack_endpoint
-    s3             = var.localstack_endpoint
-    secretsmanager = var.localstack_endpoint
-    ses            = var.localstack_endpoint
-    sns            = var.localstack_endpoint
-    sqs            = var.localstack_endpoint
-    ssm            = var.localstack_endpoint
-    stepfunctions  = var.localstack_endpoint
-    sts            = var.localstack_endpoint
+    apigateway = var.localstack_endpoint
+    cloudwatch = var.localstack_endpoint
+    dynamodb   = var.localstack_endpoint
+    iam        = var.localstack_endpoint
+    lambda     = var.localstack_endpoint
+    s3         = var.localstack_endpoint
+    sns        = var.localstack_endpoint
+    sqs        = var.localstack_endpoint
   }
 }
 
